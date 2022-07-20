@@ -1,0 +1,435 @@
+
+body{
+    font-family: 'Roboto';
+}
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.drop-it{
+    left: 10%;
+}
+#dropdownMenuButton1{
+    color: green;
+    font-size: 13px;
+}
+.dropdown-item{
+    color: green;
+}
+#dropdownMenuButton2{
+    color: green;
+    font-size: 13px;
+}
+.dropdown2{
+    right: 10%;
+}
+.kirish{
+    right: 20%;
+    margin-top: 5px;
+}
+.kirish a{
+    text-decoration: none;
+    color: rgb(99, 90, 90);
+    font-size: 14px;
+}
+.about-us{
+    right: 50%;
+    margin-top: 5px;
+}
+.about-us a{
+    text-decoration: none;
+    color: rgb(99, 90, 90);
+    font-size: 14px;
+}
+
+.second-header{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 20px;
+}
+
+.srch-btn{
+    background-color: rgb(63, 190, 63);
+    width: 4vw;
+    height: 6vh;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    margin-left: -5px;
+    transition: .3s;
+    box-shadow: 1px 1px 5px ;
+}
+.cart-main{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 0px 40px;
+}
+.srch-input input{
+    width: 30vw;
+    height: 6vh;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 1px 1px 5px ;
+    border: 1px  solid #e7e7e7;
+    text-align: center;
+}
+.som{
+    color: rgb(138, 133, 133);
+}
+#karzinaSum{
+    color: rgb(53, 53, 53);
+}
+.cart{
+    text-decoration: none;
+}
+.srch-input button:hover{
+    background-color: green;
+}
+.third-header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.internet-dokon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dokonlar a{
+  margin: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: rgb(59, 58, 58);
+}
+.dokonlar a:hover{
+    color: rgb(63, 190, 63);
+}
+.katalog{
+    background-color: rgb(63, 190, 63);
+    color: white;
+    font-weight: 600;
+}
+.border{
+    width: 86%;
+    margin: auto;
+}
+.navigation{
+    color:rgb(63, 190, 63) ;
+}
+#raqam{
+    font-weight: 600;
+}
+
+.soni{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.soni h3{
+    color: #777373;
+}
+.dokonlar-soni{
+    margin-top: 30px;
+}
+@media only screen and (max-width: 930px) {
+    .header-top a{
+      font-size: 12px;
+    }
+    .header-top .dropdown1{
+        font-size: 12px!important;
+        margin-right: 30px;
+    }
+    .header-top .dropdown2{
+        font-size: 12px!important;
+        margin-left: 40px;
+    }
+
+    .third-header .dropdown{
+        margin-left: 10px;
+        font-size: 10px!important;
+    }
+    .third-header a{
+        font-size: 12px;
+    }
+    .internet-dokon{
+        font-size: 12px;
+    }
+  }
+  .mahsulot-kat .dropdown-toggle{
+    background-color: rgb(63, 190, 63);
+    color: white;
+    font-weight: 600;
+}
+.kategoryProducts{
+    padding: 0;
+}
+.buttonImg{
+    display: none;
+}
+
+  @media (max-width: 770px) {
+      .header-top{
+          display: none;
+      }
+      .srch-input{
+          display: none;
+      }
+      .cart span{
+          display: none;
+      }
+      .mahsulot-kat{
+          position: relative;
+          top:-9vh;
+          left: 88%;
+          
+      }
+      /* .kategoryProducts{
+          position: relative;
+          right: 150vw;
+      } */
+      .buttonImg{
+        display: block;
+    }
+      .mahsulot-kat .dropdown-toggle{
+          background-color: rgb(63, 190, 63);
+          padding: 0;
+          font-size: 0;
+      }
+      .mahsulot-kat .dropdown-toggle::after{
+          border: none;
+      }
+      .katalogi{
+          display: none;
+      }
+      .butter{
+          display: block;
+      }
+  }
+
+  @media (max-width: 460px){
+      .image-makro img{
+       width: 130px;
+      }
+      .cart-main{
+          position: relative;
+          right: 11%;
+      }
+
+      .mahsulot-kat{
+          position: relative;
+          left: 80%;
+      }
+  }
+
+
+
+
+
+
+/*   yangi sahifaga o'tish   */
+
+/* .div-card-malumot{
+    border-bottom: 2px solid #87898FFF;  
+} */
+/*   card qismi rasm va pastki qismlari */
+.karzinka-div{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+.karzinka-div > div{
+    flex-basis: 50%;
+    padding: 1rem;
+}
+.div-card-karzinka{
+    /* width: 33vw; */
+    height: 56vh;;
+    /* margin: 0 60px; */
+   
+}  
+.div-card-karzinka img{
+  width: 600px;
+  height: 430px;
+
+}
+.card-icons{
+    display: flex;
+    margin: 30px 50px;
+}
+#foo-h5:hover{
+    color: green;
+}
+#fa-user:hover{
+    color: green;
+}
+
+#foo-h5{
+    margin: 0 6px;
+}
+
+
+
+
+.mah-soni{
+    font-size: 21px;
+    font-family: sans-serif;
+    color: rgb(75, 75, 77);
+}
+.modda{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #87898FFF;
+}
+
+.tavsif-card h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.tavsif-card span{
+    color: #878787;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+/*  card maxsulotlarni qoshish ayrish   */
+
+
+/*  typs kalloriyalar  */
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 120%;
+}
+
+.types p{
+    padding: 9px;
+    font-size: 70%;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.types span{
+    color: rgb(8, 224, 8);
+    font-size: 160%;
+}
+
+
+.plus-minus{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.btnm{
+    background-color: #DC3545FF;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}   
+.minus{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer !important;
+}
+.paragrf{
+    margin-top: 7px;
+}
+.qoshish{
+    padding: 8px 25px;
+    background-color: #E9ECEFFF;
+    border-radius: 3px;
+}
+.btnm-plus{
+ 
+    background-color: #7AC143FF;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-karzinka{
+    background-color: #7AC143FF;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+/* .sum-add{
+    margin-top: 100px;
+} */
+
+.sum-add{
+    display: flex;
+    justify-content: space-around;
+}
+.narx-sum{
+    font-size: 23px;
+    color: #777373;
+    margin-right: 200px;
+    margin-top: 25px;
+}
+#mah-qiymati{
+    font-size: 28px;
+    font-family: sans-serif;
+    color: rgb(67, 66, 66);
+}
+.oziqlanshmatn{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333;
+    font-weight: 500px;
+    margin: 30px 0;
+}
+.maxsulotMatn{
+    font-size: 22px;
+    line-height: 26px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.table-class{
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    
+}
+table tbody tr td:nth-child(even){
+    text-align: right;
+}
+table tbody tr td{
+    
+    padding: 10px;
+    border-bottom: 0.5px solid #777373;
+}
+.maxsulot-matn{
+    font-size: 22px;
+    color: #333;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.maxsulotTarkibi{
+    color: #777373;
+    font-size: 16px;
+}
+
+
+
+
+/*   yangi sahifaga o'tish tugashi    */

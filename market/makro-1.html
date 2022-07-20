@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="icon" href="https://makromarket.uz/img/favicon/apple-icon-60x60.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="makro-1.css">
+
+     <!-- font Awesome cdn link   -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="makro-1.js" defer></script>
+    <title>Makro.uz supermarket</title>
+</head>
+
+<body> 
+  <div class="loader">
+    <div class="lds-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+    <!-- header top -->
+    <div class="header-top">
+        <!-- dropdown compass -->
+        <div class="dropdown1 dropdown drop-it">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img class="navigation" src="https://cdn.onlinewebfonts.com/svg/img_510866.png" width="15px" alt="">
+                Toshkent
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Buxoro</a></li>
+            </ul>
+        </div>  
+
+        <!-- vakansiyalar -->
+        <div class="about-us">
+        <a href="">Vakansiyalar</a>
+        <a href=""><img
+                src="https://th.bing.com/th/id/R.666842a4f862b86d0d1cb942ebc1de9a?rik=0AFEhNMZjdmxMw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fu%2fg%2fF%2fR%2fX%2f9%2fgreen-circle-hi.png&ehk=5JGN%2bvTkavy7DYKiIjUj3AbvC5VDwuavTP1YvtoFBkk%3d&risl=&pid=ImgRaw&r=0"
+                alt="" width="5px"> B2B</a>
+        <a href=""><img
+                src="https://th.bing.com/th/id/R.666842a4f862b86d0d1cb942ebc1de9a?rik=0AFEhNMZjdmxMw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fu%2fg%2fF%2fR%2fX%2f9%2fgreen-circle-hi.png&ehk=5JGN%2bvTkavy7DYKiIjUj3AbvC5VDwuavTP1YvtoFBkk%3d&risl=&pid=ImgRaw&r=0"
+                alt="" width="5px"> Trenderlar</a>
+        <a href=""><img
+                src="https://th.bing.com/th/id/R.666842a4f862b86d0d1cb942ebc1de9a?rik=0AFEhNMZjdmxMw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fu%2fg%2fF%2fR%2fX%2f9%2fgreen-circle-hi.png&ehk=5JGN%2bvTkavy7DYKiIjUj3AbvC5VDwuavTP1YvtoFBkk%3d&risl=&pid=ImgRaw&r=0"
+                alt="" width="5px"> Biz haqimizda</a>
+            </div>
+
+            <div class="kirish">
+                <img src="https://cdn.onlinewebfonts.com/svg/img_165522.png" alt="" width="16px">
+            <a href="sessionStorage.html">Kirish  /</a>
+            <a href="registration.html">Ro'yxatdan o'tish</a>
+
+            </div>
+
+            <div class="dropdown2 dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  O'zbek
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Русский</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Tojik version</a></li>
+                </ul>
+              </div>
+
+    </div>
+
+    <!-- second header -->
+    <div class="second-header">
+        <div class="image-makro">
+     <a href="#">
+         <img src="https://makromarket.uz/img/logo-new.png" alt="">
+     </a>
+    </div>
+
+    <div class="srch-input">
+    <input  type="text" id="search" placeholder="Katalog bo'yicha qidirish">
+    <button class="srch-btn" onclick="searchProduct()">
+        <img src="https://www.clker.com/cliparts/n/U/H/1/H/u/search-icon-white-one-hi.png" width="20px" alt="">
+    </button>
+    </div>
+
+
+<!-- cart qismi -->
+    <div class="cart-main">
+        <a class="favourites" href="#">
+            <img class="imgfavorit" src="https://www.fantasiapelit.com/kuvat/kuva21/g_heart.png" width="30px" alt="">
+        </a>
+        <a class="cart" href="./karzina-main/karzina.html">
+            <img class="imgKarzina" src="https://th.bing.com/th/id/OIP.8ombaA0-9eoxKdrWpCSpvAHaHa?pid=ImgDet&rs=1" width="30px" alt="">
+            <span class="som" > <span  id="karzinaSum"></span> So`m</span>
+        </a>
+    </div>
+
+    </div>
+
+    <div class="third-header">
+      <div class="mahsulot-kat dropdown">
+        <button class="btn katalog dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img class="buttonImg" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-12.jpg"
+                alt="" width="40px"> <span class="katalogi">MAHSULOT KATALOGI</span>
+        </button>
+        <ul class="kategoryProducts dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://cdn3.iconfinder.com/data/icons/organic-farming-1/64/organic-food-fruit-vegetable-512.png"
+                        alt="" width="30px"> Meva va sabzavotlar</button></li>
+            <li><button class="dropdown-item" type="button"> <img
+                        src="https://th.bing.com/th/id/R.5e84320135c700a975d000483b74b384?rik=OFllEDl%2fkgRT4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_270374.png&ehk=Ciqh7DRkjCpFdJ0iIxAoYSFxOd0IDDBWZFSk6GiWWq8%3d&risl=&pid=ImgRaw&r=0"
+                        alt="" width="30px"> Non-bulka mahsulotlar va pishiriqlar</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/OIP.J9yFGdgPwr_reEFyh-tnzgHaHa?pid=ImgDet&rs=1" alt=""
+                        width="30px"> Sut mahsulotlari va tuxum</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/R.610f344ab3c523d0fee175b6689bfffd?rik=%2b7UcpFSVDHEGdA&riu=http%3a%2f%2fwww.macsmeats.com%2fwp-content%2fuploads%2f2019%2f06%2fMEAT-ICONS-3-2.png&ehk=fAH77zE5%2beOZ0njo2BTBO48oBbS3BylQuukCOzOn6AU%3d&risl=&pid=ImgRaw&r=0"
+                        alt="" width="30px"> Hayvonlar go'shti</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/OIP.oiOLGI04gFtQDERa5Qd9cAAAAA?pid=ImgDet&rs=1" alt=""
+                        width="30px"> Tayyor mahsulotlar</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/OIP.QdAY_eLxsn79_gZB9_y6zAHaHa?pid=ImgDet&rs=1" alt=""
+                        width="30px"> Muzlatilgan tayyor mahsulotlar</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/R.605ea7b8a91b6bafc16aa4d93f76fce9?rik=7wjDcL8B5qQudw&pid=ImgRaw&r=0"
+                        alt="" width="30px"> Konservalash vositalari,ziravorlar va qo'shimchalar</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/OIP.qh-p5EUSCXzvj734IvHkXwHaHa?pid=ImgDet&rs=1" alt=""
+                        width="30px"> Bolalar, diabet va sport ozuqasi</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://cdn.onlinewebfonts.com/svg/img_58404.png" alt="" width="30px"> Ichimlik va
+                    tamaddi</button></li>
+            <li><button class="dropdown-item" type="button"><img
+                        src="https://th.bing.com/th/id/R.2b42cdfe1d23845c62ee2c78746a0e54?rik=8OkqehJ0vlOg7w&pid=ImgRaw&r=0&sres=1&sresct=1"
+                        alt="" width="30px"> Kosmetila va gigiyena</button></li>
+        </ul>
+    </div>
+
+          <div class="dokonlar">
+           
+            <a href="#">Do'konlar</a>
+            <a href="#">Aksiya</a>
+            <a href="#">Yangiliklar</a>
+            <a href="#">Cashback</a>
+
+
+          </div>
+
+          <div class="internet-dokon">
+              <div><img src="call-center.svg" alt=""></div>
+              <div>
+
+                  <label for="raqam">Internat-do'koni</label>
+                  <p  id="raqam">78 777 05 55</p>
+              </div>
+          </div>
+
+    </div>
+    <hr  class="border">
+
+    <div  class="dokonlar-soni">
+      <div class="soni">
+          <h3>DO'KONLAR SONI <img src="112 rasm.png" alt=""></h3>
+          <h3>XODIMLAR SONI <img src="442.png" alt=""></h3>
+          <h3>SHAHARLAR SONI <img src="30.png" alt=""></h3>
+      </div>
+    </div>
+
+    <div class="hayot">
+        <button><img src="give_hope.png" width="40px" alt=""> Hayotga umid beramiz</button>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://makromarket.uz/storage/20853/62147ff23c1d2_456.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://makromarket.uz/storage/20853/62147ff23c1d2_456.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://makromarket.uz/storage/20853/62147ff23c1d2_456.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    
+    <!-- Mahsulot qismi -->
+    <h6 class="h6Mahsulotlar">Top Mahsulotlar</h6>
+    <div class="swipperWrap">
+        <!-- Swiper Top mahsulotlari uchun  -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper slider top">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="swipperWrap">
+  
+         <h6 class="h6Mahsulotlar">M brand Mahsulotlar</h6> 
+        <!-- Swiper M brand mahsulotlari uchun -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper slider m_brand">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="swipperWrap">
+  
+
+         <h6 class="h6Mahsulotlar">Sut Mahsulotlar</h6> 
+        <!-- Swiper Sut mahsulotlari uchun -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper slider milk_product">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="swipperWrap">
+
+        <h6 class="h6Mahsulotlar">Futbol Mahsulotlar</h6>
+        <!-- Swiper Futbol uchun -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper slider  football">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      
+
+       <!-- Retsep -->
+
+  <h6 class="h6Mahsulotlar">Retseptlar</h6>
+
+  <div class="Retseptlar">
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/2783/conversions/60c8514577ffd_%D1%81%D0%B0%D0%BB%D0%B0%D1%82_%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82_2-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Toshkent salati foydali vitaminlar omboridir .</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/2801/conversions/60c8516c4b559_%D0%BD%D0%B8%D1%88%D0%B0%D0%BB%D0%B4%D0%B0_1-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Nishalda-Uraz bayramlarda ajoyib taom!</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/2849/conversions/60c851dad1b13_8-1-1300x864-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Smetana sousida pishirilgan tovuq filesi</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/2868/conversions/60c85201bc8be_%D0%BF%D0%B8%D1%80%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5_%D0%B7%D0%B8%D0%BC%D0%BD%D1%8F%D1%8F_%D1%88%D0%B8%D1%88%D0%BA%D0%B0-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Kek qishki konus- stolingizdagi qorli o'rmonning bir qismi</p>
+    </div>
+  </div>
+
+  <!-- Yangiliklar -->
+
+  <h6 class="h6Mahsulotlar">Yangiliklar</h6>
+
+  <div class="Retseptlar">
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/20926/conversions/6232d592c820c_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_4-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">113-makro fillialining ochilishi</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/20852/conversions/621476fe276e2_%D0%B0%D0%B2%D0%BE%D0%BA%D0%B0%D0%B4%D0%BE-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Avakado va mango uchun eng past narxlar</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/19590/conversions/61c461796a78e_%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%D0%BA%D0%B0-%D0%B2-%D0%94%D1%83%D0%B1%D0%B0%D0%B9-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">Bizning Pepsi kompaniyasi bilan hamkorlikda o'tkazilayotgan aksiyamiz doirasida Dubayga ikki kishilik sayohat yutib oling</p>
+    </div>
+    <div class="card card1" style="width: 15rem;">
+      <img
+        src="https://makromarket.uz/storage/19577/conversions/61bc660923e97_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_1-thumb.jpg"
+        class="card-img-top" alt="...">
+      <p class="card-text">112-makro fillialini ochilishi</p>
+    </div>
+  </div>
+
+  
+   
+   <!-- footerdan oldingi -->
+
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="assortment.png" alt="404">
+             <p>Mahsulotlarning kafolati</p>
+        </div>
+        <div class="col">
+            <img src="bonus.png" alt="">
+            <p>Mahsulotlarning keng <br> assortimenti</p>
+        </div>
+        <div class="col">
+            <img src="warranty.png" alt="">
+            <p>Makro sodiqlik ishtirokchilari <br> uchun imtiyozlar</p>
+        </div>
+    </div>
+</div>
+
+
+      <!-- Footer qismi -->
+      <div class="container-fluid my-5">
+
+        <footer class="text-dark text-center text-lg-start ">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4"><img src="https://makromarket.uz/img/logo-new.png" alt=""></h5>
+
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+
+                        <p>
+                            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                            molestias.
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <!-- Dribbble -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-dribbble"></i></a>
+                            <!-- Twitter -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-twitter"></i></a>
+                            <!-- Google + -->
+                            <a type="button" class="btn btn-floating btn-light btn-lg"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <!-- Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Mahsulot izlash</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="text-black form-label" for="formControlLg">Search</label>
+                        </div>
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Uzbekistan, 00-967,
+                                    Tashkent</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                    class="ms-2">makrouz@.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 998 71 777 77
+                                   00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Kun tartibi</h5>
+
+                        <table class="table text-center text-dark">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Dush- Pay:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Jum - Shan:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                                <tr>
+                                    <td>Yakshanba:</td>
+                                    <td>9am - 10pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-black" href="#">Bexruz, Bunyod, Javohir, Niyatulla</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+      
+
+
+        
+
+         <!-- JavaScript Bundle with Popper
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script> -->
+
+  
+     <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+  crossorigin="anonymous"></script>
+ 
+</body>
+
+</html>
